@@ -50,3 +50,33 @@ Stack trace:
   thrown in /var/www/html/public/rendu/create.php on line 43
 [12-Mar-2023 15:52:15 Europe/Paris] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/public/rendu/create.php:39) in /var/www/html/public/rendu/create.php on line 81
 [12-Mar-2023 15:52:41 Europe/Paris] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/public/rendu/create.php:39) in /var/www/html/public/rendu/create.php on line 81
+[12-Mar-2023 16:36:50 Europe/Paris] PHP Warning:  Undefined variable $conenxion in /var/www/html/public/rendu/delete.php on line 10
+[12-Mar-2023 16:36:50 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /var/www/html/public/rendu/delete.php:10
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/public/rendu/delete.php on line 10
+[12-Mar-2023 16:37:11 Europe/Paris] PHP Warning:  require_once(close.php): Failed to open stream: No such file or directory in /var/www/html/public/rendu/delete.php on line 18
+[12-Mar-2023 16:37:11 Europe/Paris] PHP Fatal error:  Uncaught Error: Failed opening required 'close.php' (include_path='.:/opt/php72/lib/php') in /var/www/html/public/rendu/delete.php:18
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/public/rendu/delete.php on line 18
+[12-Mar-2023 16:37:14 Europe/Paris] PHP Warning:  require_once(close.php): Failed to open stream: No such file or directory in /var/www/html/public/rendu/delete.php on line 18
+[12-Mar-2023 16:37:14 Europe/Paris] PHP Fatal error:  Uncaught Error: Failed opening required 'close.php' (include_path='.:/opt/php72/lib/php') in /var/www/html/public/rendu/delete.php:18
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/public/rendu/delete.php on line 18
+[12-Mar-2023 16:37:15 Europe/Paris] PHP Warning:  require_once(close.php): Failed to open stream: No such file or directory in /var/www/html/public/rendu/delete.php on line 18
+[12-Mar-2023 16:37:15 Europe/Paris] PHP Fatal error:  Uncaught Error: Failed opening required 'close.php' (include_path='.:/opt/php72/lib/php') in /var/www/html/public/rendu/delete.php:18
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/public/rendu/delete.php on line 18
+[12-Mar-2023 16:37:16 Europe/Paris] PHP Warning:  require_once(close.php): Failed to open stream: No such file or directory in /var/www/html/public/rendu/delete.php on line 18
+[12-Mar-2023 16:37:16 Europe/Paris] PHP Fatal error:  Uncaught Error: Failed opening required 'close.php' (include_path='.:/opt/php72/lib/php') in /var/www/html/public/rendu/delete.php:18
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/public/rendu/delete.php on line 18
+[12-Mar-2023 16:37:17 Europe/Paris] PHP Warning:  require_once(close.php): Failed to open stream: No such file or directory in /var/www/html/public/rendu/delete.php on line 18
+[12-Mar-2023 16:37:17 Europe/Paris] PHP Fatal error:  Uncaught Error: Failed opening required 'close.php' (include_path='.:/opt/php72/lib/php') in /var/www/html/public/rendu/delete.php:18
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/public/rendu/delete.php on line 18
