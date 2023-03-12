@@ -47,7 +47,7 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
                     <td><?= $film['realisateur'] ?></td>
                     <td><?= $film['acteurs'] ?></td>
                     <td><?= $film['genre'] ?></td>
-                    <td><a href="details.php?id=<?= $film['id'] ?>">Voir</a>  <a href="update.php?id=<?= $film['id'] ?>">Modifier</a>  <a href="delete.php?id=<?= $film['id'] ?>">Supprimer</a></td>
+                    <td><a href="voir.php?id=<?= $film['id'] ?>">Voir</a>  <a href="update.php?id=<?= $film['id'] ?>">Modifier</a>  <a href="delete.php?id=<?= $film['id'] ?>">Supprimer</a></td>
                 </tr>
         <?php
             }
