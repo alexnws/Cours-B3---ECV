@@ -9,7 +9,7 @@ if(isset($_POST['username']) && !empty($_POST['username'])) {
         //Todo: Faire le message de succès / Redirection
         header("location: read.php");
     } else {
-        $error = "Erreur dans la connexion, verifier votre username et mot de passe";
+        $error = "Erreur, verifier votre Username et Password";
     }
 }
 ?>
@@ -20,11 +20,12 @@ if(isset($_POST['username']) && !empty($_POST['username'])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.css">
     <title>Connexion</title>
 </head>
-<body>
+<body class="connexion">
     <h1>Connexion</h1>
-    <form method="POST">
+    <form method="POST" >
         <div>
             <input type="hidden" name="ninja" value="je suis un ninja"/>
         </div>

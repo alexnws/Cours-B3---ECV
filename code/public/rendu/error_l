@@ -95,3 +95,74 @@ Stack trace:
   thrown in /var/www/html/public/rendu/delete.php on line 18
 [12-Mar-2023 16:58:30 Europe/Paris] PHP Warning:  Undefined variable $annee in /var/www/html/public/rendu/voir.php on line 44
 [12-Mar-2023 16:58:30 Europe/Paris] PHP Warning:  Trying to access array offset on value of type null in /var/www/html/public/rendu/voir.php on line 44
+[12-Mar-2023 17:54:47 Europe/Paris] PHP Warning:  require_once(close.php): Failed to open stream: No such file or directory in /var/www/html/public/rendu/delete.php on line 18
+[12-Mar-2023 17:54:47 Europe/Paris] PHP Fatal error:  Uncaught Error: Failed opening required 'close.php' (include_path='.:/opt/php72/lib/php') in /var/www/html/public/rendu/delete.php:18
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/public/rendu/delete.php on line 18
+[12-Mar-2023 17:58:43 Europe/Paris] PHP Warning:  require_once(close.php): Failed to open stream: No such file or directory in /var/www/html/public/rendu/delete.php on line 18
+[12-Mar-2023 17:58:43 Europe/Paris] PHP Fatal error:  Uncaught Error: Failed opening required 'close.php' (include_path='.:/opt/php72/lib/php') in /var/www/html/public/rendu/delete.php:18
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/public/rendu/delete.php on line 18
+[12-Mar-2023 18:08:15 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[22003]: Numeric value out of range: 1264 Out of range value for column 'annee' at row 1 in /var/www/html/public/rendu/create.php:31
+Stack trace:
+#0 /var/www/html/public/rendu/create.php(31): PDOStatement->execute()
+#1 {main}
+  thrown in /var/www/html/public/rendu/create.php on line 31
+[12-Mar-2023 18:09:02 Europe/Paris] PHP Warning:  require_once(close.php): Failed to open stream: No such file or directory in /var/www/html/public/rendu/delete.php on line 18
+[12-Mar-2023 18:09:02 Europe/Paris] PHP Fatal error:  Uncaught Error: Failed opening required 'close.php' (include_path='.:/opt/php72/lib/php') in /var/www/html/public/rendu/delete.php:18
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/public/rendu/delete.php on line 18
+[12-Mar-2023 18:10:51 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[22003]: Numeric value out of range: 1264 Out of range value for column 'annee' at row 1 in /var/www/html/public/rendu/create.php:31
+Stack trace:
+#0 /var/www/html/public/rendu/create.php(31): PDOStatement->execute()
+#1 {main}
+  thrown in /var/www/html/public/rendu/create.php on line 31
+[12-Mar-2023 18:11:41 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[22003]: Numeric value out of range: 1264 Out of range value for column 'annee' at row 1 in /var/www/html/public/rendu/create.php:31
+Stack trace:
+#0 /var/www/html/public/rendu/create.php(31): PDOStatement->execute()
+#1 {main}
+  thrown in /var/www/html/public/rendu/create.php on line 31
+[12-Mar-2023 18:11:46 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[22003]: Numeric value out of range: 1264 Out of range value for column 'annee' at row 1 in /var/www/html/public/rendu/create.php:31
+Stack trace:
+#0 /var/www/html/public/rendu/create.php(31): PDOStatement->execute()
+#1 {main}
+  thrown in /var/www/html/public/rendu/create.php on line 31
+[12-Mar-2023 18:12:04 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[22003]: Numeric value out of range: 1264 Out of range value for column 'annee' at row 1 in /var/www/html/public/rendu/create.php:31
+Stack trace:
+#0 /var/www/html/public/rendu/create.php(31): PDOStatement->execute()
+#1 {main}
+  thrown in /var/www/html/public/rendu/create.php on line 31
+[12-Mar-2023 18:13:44 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[22003]: Numeric value out of range: 1264 Out of range value for column 'annee' at row 1 in /var/www/html/public/rendu/create.php:31
+Stack trace:
+#0 /var/www/html/public/rendu/create.php(31): PDOStatement->execute()
+#1 {main}
+  thrown in /var/www/html/public/rendu/create.php on line 31
+[12-Mar-2023 18:13:50 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[22003]: Numeric value out of range: 1264 Out of range value for column 'annee' at row 1 in /var/www/html/public/rendu/create.php:31
+Stack trace:
+#0 /var/www/html/public/rendu/create.php(31): PDOStatement->execute()
+#1 {main}
+  thrown in /var/www/html/public/rendu/create.php on line 31
+[12-Mar-2023 18:14:12 Europe/Paris] PHP Fatal error:  Uncaught PDOException: SQLSTATE[22003]: Numeric value out of range: 1264 Out of range value for column 'annee' at row 1 in /var/www/html/public/rendu/update.php:32
+Stack trace:
+#0 /var/www/html/public/rendu/update.php(32): PDOStatement->execute()
+#1 {main}
+  thrown in /var/www/html/public/rendu/update.php on line 32
+[12-Mar-2023 18:15:06 Europe/Paris] PHP Warning:  require_once(close.php): Failed to open stream: No such file or directory in /var/www/html/public/rendu/delete.php on line 18
+[12-Mar-2023 18:15:06 Europe/Paris] PHP Fatal error:  Uncaught Error: Failed opening required 'close.php' (include_path='.:/opt/php72/lib/php') in /var/www/html/public/rendu/delete.php:18
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/public/rendu/delete.php on line 18
+[12-Mar-2023 18:23:47 Europe/Paris] PHP Warning:  Trying to access array offset on value of type bool in /var/www/html/public/rendu/update.php on line 66
+[12-Mar-2023 18:23:47 Europe/Paris] PHP Warning:  Trying to access array offset on value of type bool in /var/www/html/public/rendu/update.php on line 70
+[12-Mar-2023 18:23:47 Europe/Paris] PHP Warning:  Trying to access array offset on value of type bool in /var/www/html/public/rendu/update.php on line 74
+[12-Mar-2023 18:23:47 Europe/Paris] PHP Warning:  Trying to access array offset on value of type bool in /var/www/html/public/rendu/update.php on line 78
+[12-Mar-2023 18:23:47 Europe/Paris] PHP Warning:  Trying to access array offset on value of type bool in /var/www/html/public/rendu/update.php on line 82
+[12-Mar-2023 18:23:47 Europe/Paris] PHP Warning:  Trying to access array offset on value of type bool in /var/www/html/public/rendu/update.php on line 88
+[12-Mar-2023 19:10:59 Europe/Paris] PHP Warning:  require_once(close.php): Failed to open stream: No such file or directory in /var/www/html/public/rendu/delete.php on line 18
+[12-Mar-2023 19:10:59 Europe/Paris] PHP Fatal error:  Uncaught Error: Failed opening required 'close.php' (include_path='.:/opt/php72/lib/php') in /var/www/html/public/rendu/delete.php:18
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/public/rendu/delete.php on line 18

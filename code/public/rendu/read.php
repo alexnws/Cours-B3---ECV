@@ -22,12 +22,13 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/read.css">
     <title>Liste des films</title>
 </head>
 <body>
 
     <h1>Liste des films</h1>
-    <table>
+    <table class="tableau">
         <thead>
             <th>Id</th>
             <th>Nom</th>
@@ -35,6 +36,7 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
             <th>Réalisateur</th>
             <th>Acteurs</th>
             <th>Genre</th>
+            <th>Edition</th>
         </thead>
         <tbody>
         <?php
@@ -47,17 +49,15 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
                     <td><?= $film['realisateur'] ?></td>
                     <td><?= $film['acteurs'] ?></td>
                     <td><?= $film['genre'] ?></td>
-                    <td><a href="voir.php?id=<?= $film['id'] ?>">Voir</a>  <a href="update.php?id=<?= $film['id'] ?>">Modifier</a>  <a href="delete.php?id=<?= $film['id'] ?>">Supprimer</a></td>
+                    <td><a class="voir" href="voir.php?id=<?= $film['id'] ?>">Voir</a>  <a class="modifier" href="update.php?id=<?= $film['id'] ?>">Modifier</a>  <a class="supprimer"href="delete.php?id=<?= $film['id'] ?>">Supprimer</a></td>
                 </tr>
         <?php
             }
         ?>
         </tbody>
     </table>
-    <a href="create.php">Ajouter</a>
+    <a href="create.php" class="ajout-film">Ajouter</a>
 </body>
 </html>
 
-//TODO : Faire la requete Select pour avoir les bonnes données
-//TODO : Faire le HTML avec  la boucle d'affichage des données
 

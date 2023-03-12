@@ -1,0 +1,39 @@
+* {
+  background-color: black;
+  color: white;
+  padding: 1%;
+}
+.ajout-film {
+  background-color: white;
+  margin: 20px;
+  margin-left: 20%;
+  color: black;
+  border: 2px solid #ffffff;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+.tableau {
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.795);
+
+  text-align: center;
+  margin: auto;
+  width: auto;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-collapse: collapse;
+}
+th,
+td {
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px;
+}
+.voir,
+.supprimer,
+.modifier {
+  text-decoration: none;
+  padding: 10px;
+}

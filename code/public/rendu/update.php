@@ -8,7 +8,7 @@ if(isset($_POST)){
         && isset($_POST['annee']) && !empty($_POST['annee'])
         && isset($_POST['realisateur']) && !empty($_POST['realisateur'])
         && isset($_POST['acteurs']) && !empty($_POST['acteurs'])
-        && isset($_POST['genre']) && !empty($_POST['genre'])){
+        && isset($_POST['genre']) && !empty($_POST['genre'])){   
         $id = strip_tags($_GET['id']);
         $nom = strip_tags($_POST['nom']);
         $annee = strip_tags($_POST['annee']);
@@ -22,7 +22,7 @@ if(isset($_POST)){
         $query = $connexion->prepare($sql);
 
         $query->bindValue(':nom', $nom, PDO::PARAM_STR);
-        $query->bindValue(':annee', $realisateur, PDO::PARAM_INT);
+        $query->bindValue(':annee', $annee, PDO::PARAM_INT);
         $query->bindValue(':realisateur', $realisateur, PDO::PARAM_STR);
         $query->bindValue(':id', $id, PDO::PARAM_INT);
         $query->bindValue(':acteurs', $acteurs, PDO::PARAM_STR);
@@ -54,27 +54,26 @@ if(isset($_GET['id']) && !empty($_GET['id'])){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/update.css">
     <title>Liste des films</title>
-
-    <link rel="stylesheet" href="" integrity="" >
 </head>
 <body>
     <h1>Modifier un film</h1>
-    <form method="post">
+    <form method="post" class="update">
         <p>
-            <label for="nom">Nom</label>
+            <label for="nom">Nom:</label>
             <input type="text" name="nom" id="nom" value="<?= $result['nom'] ?>">
         </p>
         <p>
-            <label for="annee">Année</label>
+            <label for="annee">Année:</label>
             <input type="number" name="annee" id="annee" value="<?= $result['annee'] ?>">
         </p>
         <p>
-            <label for="realisateur">Réalisateur</label>
+            <label for="realisateur">Réalisateur:</label>
             <input type="text" name="realisateur" id="realisateur" value="<?= $result['realisateur'] ?>">
         </p>
         <p>
-            <label for="acteurs">Acteurs</label>
+            <label for="acteurs">Acteurs:</label>
             <input type="text" name="acteurs" id="acteurs" value="<?= $result['acteurs'] ?>">
         </p>
         <p>
@@ -84,14 +83,7 @@ if(isset($_GET['id']) && !empty($_GET['id'])){
         <p>
             <button>Enregistrer</button>
         </p>
-        <p><a class="btn-retour" href="read.php">Retour</a></p>
         <input type="hidden" name="id" value="<?= $result['id'] ?>">
     </form>
 </body>
 </html>
-
-//Todo : Récupérer l'id depuis l'url
-//TODO : Remplir le forumaire HTML avec les valeur récupérées depuis la requete correspondante
-//TODO: Penser a mettre un input hidden pour l'ID
-//TODO: mettre a jour le contenu avec une requete correspondante. 
-//TODO: Bonus : Gérer les erreurs / Le typages des champs / Messages de succès / Message d'Echec / Redirection

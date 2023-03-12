@@ -23,7 +23,7 @@ if(isset($_POST)){
 
             $query->bindValue(':nom', $nom, PDO::PARAM_STR);
             $query->bindValue(':annee', $annee, PDO::PARAM_INT);
-            $query->bindValue(':realisateur', $realisateur, PDO::PARAM_INT);
+            $query->bindValue(':realisateur', $realisateur, PDO::PARAM_STR);
             $query->bindValue(':acteurs', $acteurs, PDO::PARAM_STR);
             $query->bindValue(':genre', $genre, PDO::PARAM_STR);
 
@@ -36,26 +36,38 @@ if(isset($_POST)){
            
 
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/create.css">
+    <title>Ajouter un film</title>
+</head>
+<body>
+   <h1>Ajouter un film</h1>
 
-<form method="post">
-    <label for="nom">Nom</label>
+<form method="post" class="create">
+    <label for="nom">Nom:</label>
     <input type="text" name="nom" id="nom">
-    <label for="annee">Année</label>
+    <label for="annee">Année:</label>
     <input type="number" name="annee" id="annee">
-    <label for="realisateur">Réalisateur</label>
+    <label for="realisateur">Réalisateur:</label>
     <input type="text" name="realisateur" id="realisateur">
-    <label for="acteurs">Acteurs</label>
+    <label for="acteurs">Acteurs:</label>
     <input type="text" name="acteurs" id="acteurs">
-    <label for="genre">Genre</label>
+    <label for="genre">Genre:</label>
     <input type="text" name="genre" id="genre">
     <button>Enregistrer</button>
 </form>
+</body>
+</html>
 
 
 
 
 
 
-//TODO: Créer le formulaire HTML
-//TODO: Si formulaire soumi, alors faire la requete d'insertion
-//TODO: Bonus : Gérer les erreurs / Le typages des champs / Messages de succès / Message d'Echec / Redirection
+
+

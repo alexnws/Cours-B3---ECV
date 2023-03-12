@@ -1,0 +1,11 @@
+* {
+  background-color: black;
+  color: white;
+}
+.create {
+  margin: auto;
+  width: 80%;
+  padding: 10px;
+  background: #000000;
+  box-shadow: 0 0 20px 0 rgb(255, 255, 255);
+}
