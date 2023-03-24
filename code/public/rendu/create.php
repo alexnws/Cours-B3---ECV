@@ -2,8 +2,10 @@
 require_once 'fonction.ini.php';
 $connexion = connexion();
 
-$sql = "INSERT INTO `Films` (`nom`, `annee`, `realisateur`,`acteurs`,`genre` ) VALUES (:nom, :annee, :realisateur, :acteurs, :genre);";
 
+//Acceder a la tableau souhaiter avec un INSERT//
+$sql = "INSERT INTO `Films` (`nom`, `annee`, `realisateur`,`acteurs`,`genre` ) VALUES (:nom, :annee, :realisateur, :acteurs, :genre);";
+// On prépare la requête//
 $query = $connexion->prepare($sql);
 if(isset($_POST)){
     if(isset($_POST['nom']) && !empty($_POST['nom'])
@@ -16,20 +18,13 @@ if(isset($_POST)){
             $realisateur = strip_tags($_POST['realisateur']);
             $acteurs = strip_tags($_POST['acteurs']);
             $genre = strip_tags($_POST['genre']);
-
-            $sql = "INSERT INTO `Films` (`nom`, `annee`, `realisateur`,`acteurs`, `genre`) VALUES (:nom, :annee, :realisateur, :acteurs, :genre);";
-
-            $query = $connexion->prepare($sql);
-
             $query->bindValue(':nom', $nom, PDO::PARAM_STR);
             $query->bindValue(':annee', $annee, PDO::PARAM_INT);
             $query->bindValue(':realisateur', $realisateur, PDO::PARAM_STR);
             $query->bindValue(':acteurs', $acteurs, PDO::PARAM_STR);
             $query->bindValue(':genre', $genre, PDO::PARAM_STR);
 
-
             $query->execute();
-            $_SESSION['message'] = "Produit ajouté avec succès !";
             header('Location: read.php');
         }
 }

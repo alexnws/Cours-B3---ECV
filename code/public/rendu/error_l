@@ -166,3 +166,18 @@ Stack trace:
 Stack trace:
 #0 {main}
   thrown in /var/www/html/public/rendu/delete.php on line 18
+[24-Mar-2023 13:42:08 Europe/Paris] PHP Warning:  require_once(close.php): Failed to open stream: No such file or directory in /var/www/html/public/rendu/delete.php on line 18
+[24-Mar-2023 13:42:08 Europe/Paris] PHP Fatal error:  Uncaught Error: Failed opening required 'close.php' (include_path='.:/opt/php72/lib/php') in /var/www/html/public/rendu/delete.php:18
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/public/rendu/delete.php on line 18
+[24-Mar-2023 13:43:34 Europe/Paris] PHP Warning:  require_once(close.php): Failed to open stream: No such file or directory in /var/www/html/public/rendu/delete.php on line 18
+[24-Mar-2023 13:43:34 Europe/Paris] PHP Fatal error:  Uncaught Error: Failed opening required 'close.php' (include_path='.:/opt/php72/lib/php') in /var/www/html/public/rendu/delete.php:18
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/public/rendu/delete.php on line 18
+[24-Mar-2023 13:52:04 Europe/Paris] PHP Warning:  require_once(close.php): Failed to open stream: No such file or directory in /var/www/html/public/rendu/delete.php on line 18
+[24-Mar-2023 13:52:04 Europe/Paris] PHP Fatal error:  Uncaught Error: Failed opening required 'close.php' (include_path='.:/opt/php72/lib/php') in /var/www/html/public/rendu/delete.php:18
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/public/rendu/delete.php on line 18

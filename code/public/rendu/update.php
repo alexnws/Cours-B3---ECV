@@ -18,7 +18,7 @@ if(isset($_POST)){
 
 
         $sql = "UPDATE `Films` SET `nom`=:nom, `annee`=:annee, `realisateur`=:realisateur, `acteurs`=:acteurs, `genre`=:genre WHERE `id`=:id;";
-
+        // On prépare la requête//
         $query = $connexion->prepare($sql);
 
         $query->bindValue(':nom', $nom, PDO::PARAM_STR);
@@ -28,7 +28,7 @@ if(isset($_POST)){
         $query->bindValue(':acteurs', $acteurs, PDO::PARAM_STR);
         $query->bindValue(':genre', $genre, PDO::PARAM_STR);
         $query->bindValue(':id', $id, PDO::PARAM_INT);
-
+        // On exécute la requête//
         $query->execute();
 
         header('Location: read.php');
@@ -38,10 +38,11 @@ if(isset($_POST)){
 if(isset($_GET['id']) && !empty($_GET['id'])){
     $id = strip_tags($_GET['id']);
     $sql = "SELECT * FROM `Films` WHERE `id`=:id;";
-
+    // On prépare la requête//
     $query = $connexion->prepare($sql);
 
     $query->bindValue(':id', $id, PDO::PARAM_INT);
+    //On execute la requête//
     $query->execute();
 
     $result = $query->fetch();

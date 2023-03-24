@@ -3,16 +3,16 @@ require_once 'fonction.ini.php';
 $connexion = connexion();
 
 
-// On écrit notre requête
+// On écrit notre requête//
 $sql = 'SELECT * FROM `Films`';
 
-// On prépare la requête
+// On prépare la requête//
 $query = $connexion->prepare($sql);
 
-// On exécute la requête
+// On exécute la requête//
 $query->execute();
 
-// On stocke le résultat dans un tableau associatif
+// On stocke le résultat dans un tableau associatif//
 $result = $query->fetchAll(PDO::FETCH_ASSOC);
 
 

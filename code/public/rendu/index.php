@@ -1,12 +1,12 @@
 <?php
 require_once 'fonction.ini.php';
 $connexion = connexion();
-
+//Acceder à la tableau users pour pouvoir se connecter//
 if(isset($_POST['username']) && !empty($_POST['username'])) {
     $result = $connexion->query('select * from users where username="'.$_POST['username'].'" and password="'.sha1($_POST['password']).'"');
 
     if($result->rowCount() >=1 ) {
-        //Todo: Faire le message de succès / Redirection
+        // le message de succès / Redirection//
         header("location: read.php");
     } else {
         $error = "Erreur, verifier votre Username et Password";
